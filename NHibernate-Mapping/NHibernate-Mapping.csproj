@@ -78,7 +78,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\NHibernate-Mapping.Entities\NHibernate-Mapping.Entities.csproj">
+    <ProjectReference Include="..\NHibernate-Mapping.Entities\NHibernate-Mapping.Entities.csproj">
       <Project>{72a3c2b6-3dfb-4e1e-a657-e5052e0fd53b}</Project>
       <Name>NHibernate-Mapping.Entities</Name>
     </ProjectReference>

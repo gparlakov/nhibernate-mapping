@@ -15,16 +15,17 @@ namespace ConsoleApplication1
         private List<Type> _mappedTypes = new List<Type>
         {
             typeof(Person)
-            //,typeof(ShortPerson)
+            ,typeof(ShortPerson)
             ,typeof(AnotherPerson)
             ,typeof(YetAnotherPerson)
         };
 
         public override bool ShouldMap(Type type)
         {
-            return type.Namespace != null
-                   && type.IsPublic &&
-                   _mappedTypes.Contains(type);
+            return base.ShouldMap(type)
+                   && type.Namespace != null
+                   && type.IsPublic 
+                   && _mappedTypes.Contains(type);
         }
 
     }
